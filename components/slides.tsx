@@ -1,5 +1,6 @@
 "use client"
-import * as React from "react"
+
+
 
 import {
     Carousel,
@@ -12,9 +13,9 @@ import { Button } from "./ui/button"
 import { Card, CardContent } from "./ui/card"
 import Link from "next/link"
 import { Separator } from "./ui/separator"
-import { Badge } from "./ui/badge"
 import { MasonryCard } from "./masonry-card"
 import { ConnectKitButton } from "connectkit"
+import { TokenForm } from "./token-form"
 
 
 const NameLink = () => <>
@@ -45,7 +46,7 @@ export function Slides() {
     return (
         <Carousel className="w-full max-w-lg xl:max-w-[96rem]">
             <CarouselContent>
-                {/* <CarouselItem>
+                <CarouselItem>
                     <div className="p-1">
                         <Card className="border-none bg-gradient-to-r from-emerald-500 to-blue-500">
                             <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
@@ -211,7 +212,7 @@ export function Slides() {
                             </CardContent>
                         </Card>
                     </div>
-                </CarouselItem> */}
+                </CarouselItem>
 
                 <CarouselItem>
                     <div className="p-1">
@@ -219,7 +220,7 @@ export function Slides() {
                             <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
                                 <div className="text-center max-w-[750px] grid place-items-center mx-auto">
                                     <ConnectKitButton />
-                                    <p className=" text-center text-md pt-4 font-light text-foreground">
+                                    <p className="dark:text-slate-500 text-center text-md pt-4 font-light text-foreground">
                                         *Una vez conectado, pasa al siguiente slide.
                                     </p>
                                 </div>
@@ -237,6 +238,153 @@ export function Slides() {
                                         Ahora necesitamos alguna información básica para nuestro token, lo más importante es un nombre y un símbolo (o ticker). El símbolo es la abreviación que comúnmente vemos en mercados financieros.
                                     </p>
                                 </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <div className="max-w-[750px] grid place-items-center mx-auto">
+                                    <TokenForm />
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <hgroup className="text-center mx-auto">
+                                    <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                                        Teoría de Juegos
+                                    </h1>
+                                    <h2 className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        La teoría de juegos en criptografía es el estudio de la toma de decisiones estratégicas en situaciones donde el resultado depende de las acciones de múltiples individuos o partes.
+                                    </h2>
+                                </hgroup>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <div className="text-center mx-auto">
+                                    <p className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        Se trata de entender cómo los participantes en una economía descentralizada toman decisiones y cómo interactúan entre sí.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                 <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <hgroup className="text-center mx-auto">
+                                    <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                                        Diseño de Token
+                                    </h1>
+                                </hgroup>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <div className="text-center mx-auto">
+                                    <p className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        El diseño de token es un proceso que implica la creación de un token que sea seguro, escalable y fácil de utilizar. Los diseñadores de tokens deben considerar una amplia variedad de factores, desde la oferta de tokens hasta la gobernanza.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <hgroup className="text-center mx-auto">
+                                    <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                                        Estudio de Caso
+                                    </h1>
+                                    <h2 className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        Chainlink
+                                    </h2>
+                                </hgroup>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <div className="text-center mx-auto">
+                                    <p className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        Ahora que hemos creado nuestro propio token, es hora de analizar un caso de uso real de tokens en la industria. Chainlink es una plataforma de oráculos descentralizados que utiliza tokens para incentivar a los participantes a proporcionar datos precisos y seguros.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none bg-gradient-to-r from-violet-500 to-fuchsia-500">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <hgroup className="text-center mx-auto">
+                                    <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                                        Conclusión
+                                    </h1>
+                                </hgroup>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <div className="text-center mx-auto">
+                                    <p className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        En conclusión, la economía criptográfica, la tokenómica y la teoría de juegos son fundamentales para entender cómo funcionan las economías basadas en tokens. Al diseñar mecanismos de token y tokens, es importante considerar los incentivos y desincentivos para los participantes.
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </CarouselItem>
+
+                <CarouselItem>
+                    <div className="p-1">
+                        <Card className="border-none bg-gradient-to-r from-emerald-500 to-blue-500">
+                            <CardContent className="flex aspect-auto xl:aspect-video items-center justify-center p-6">
+                                <hgroup className="text-center mx-auto">
+                                    <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                                        Gracias!
+                                    </h1>
+                                    <h2 className="max-w-[750px] text-center text-xl font-light text-foreground">
+                                        Por <NameLink />
+                                    </h2>
+                                </hgroup>
                             </CardContent>
                         </Card>
                     </div>
