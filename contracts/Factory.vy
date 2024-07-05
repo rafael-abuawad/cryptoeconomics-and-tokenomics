@@ -1,4 +1,4 @@
-# pragma version >0.3.10
+# pragma evm-version paris
 
 MAX_TOKENS: constant(uint8) = 8
 

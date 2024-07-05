@@ -3,3 +3,11 @@ name: cryptonomics
 plugins:
   - name: vyper
   - name: fantom
+
+vyper:
+  evm_version: paris
+
+node:
+  fantom:
+    testnet:
+      uri: https://rpc.testnet.fantom.network

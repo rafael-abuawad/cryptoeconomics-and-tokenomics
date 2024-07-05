@@ -1,4 +1,4 @@
-# pragma version >0.3.10
+# pragma evm-version paris
 
 from ethereum.ercs import IERC20
 from ethereum.ercs import IERC20Detailed
